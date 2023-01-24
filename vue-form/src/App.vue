@@ -37,10 +37,8 @@ export default {
       push : 0,
       data : data1,
       modal :  false,
-      price : ['10','1','100'],
       recommend : ['0','0','0'],
       menus : ['코끼리 상품', '진짜 코끼리', 'QnA'],
-      products : ['코끼리 봇','코끼리 용품','아프리카 코끼리']
     }
   }, 
   
