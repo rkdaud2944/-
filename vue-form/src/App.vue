@@ -2,8 +2,8 @@
 
   <div class="black-bg" v-if="modal == true">
     <div class="white-bg">
-      <h4>  {{data[push].title}}</h4>
-      <p>내용</p>
+      <h4>{{data[push].title}}</h4>
+      <p>{{data[push].content}}</p>
       <button @click="modal = false"> 닫기 </button>
     </div>
 
@@ -23,20 +23,6 @@
         <button @click="recommend[i]++">추천버튼</button>
         <span>추천수 : {{recommend[i]}}</span>
       </div>
-      <!-- <div>
-        <img src="./assets/image2.jpg" class="contents-img" @click="modal = true">
-        <h4> {{data[1].title}} </h4>
-        <p>{{data[1].price}}만원</p>
-        <button @click="recommend[1]++">추천버튼</button>
-        <span>추천수 : {{recommend[1]}}</span>
-      </div>
-      <div>
-        <img src="./assets/image1.jpg" class="contents-img" @click="modal = true">
-        <h4> {{data[2].title}} </h4>
-        <p>{{data[2].price}}만원</p>
-        <button @click="recommend[2]++">추천버튼</button>
-        <span>추천수 : {{recommend[2]}}</span>
-      </div> -->
 
 </template>
 
@@ -54,8 +40,7 @@ export default {
       price : ['10','1','100'],
       recommend : ['0','0','0'],
       menus : ['코끼리 상품', '진짜 코끼리', 'QnA'],
-      products : ['코끼리 봇','코끼리 용품','아프리카 코끼리'],
-      images : ['image3.jpg','image2.jpg','image1.jpg']
+      products : ['코끼리 봇','코끼리 용품','아프리카 코끼리']
     }
   }, 
   
