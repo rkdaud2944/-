@@ -1,14 +1,16 @@
 <template>
 
+<div class="start" :class="{ end : modal }">
   <div class="black-bg" v-if="modal == true">
     <div class="white-bg">
-      <h4>{{data[push].title}}</h4>
+      <h4 style="font-size: 35px;">{{data[push].title}}</h4>
+      <img :src="data[push].img" style="width: 30%">
       <p>{{data[push].content}}</p>
       <button @click="modal = false"> 닫기 </button>
     </div>
 
   </div>
-
+</div>
 
 
   <p class="title">코끼리 커뮤니케이션</p>
@@ -101,5 +103,12 @@ div {
   background: white;
   border-radius: 5px;
   padding: 20px;
+}
+.start {
+  opacity: 0;
+  transition: all 1s;
+}
+.end {
+  opacity: 1;
 }
 </style>
